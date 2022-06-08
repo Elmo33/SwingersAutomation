@@ -1,0 +1,26 @@
+{
+    "deleteExistedRounds": [],
+    "firstRound": {
+        "bookingId": "7b5d6c32-9cb9-4c28-2fb6-08da3d5d8767",
+        "venueId": "3a54e4da-32fb-49d1-9e1e-6128549009f6",
+        "operationalDate": "2022-05-25T00:00:00",
+        "round": 1,
+        "golfCourseConfigId": "85617297-3c5f-4188-5e80-08da275e2cdd",
+        "start": "2022-05-25T17:00:00.000Z",
+        "end": "2022-05-25T17:35:00.000Z",
+        "frontBufferStart": "2022-05-25T16:55:00.000Z",
+        "backBufferEnd": "2022-05-25T17:40:00.000Z",
+        "partySize": 16
+    },
+    "secondRound": null,
+    "inquiry": {
+        "id": "0d243e70-fb46-4538-651f-08da3d5d879d",
+        "agencyId": null,
+        "agencyRate": null,
+        "agencyContactId": null,
+        "companyId": null,
+        "clientId": null,
+        "contactId": null,
+        "eventType": 1
+    }
+}

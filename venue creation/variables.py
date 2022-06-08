@@ -1,0 +1,219 @@
+class Vars:
+    @staticmethod
+    def venue_payload(venue_name, code):
+        webkit = "------WebKitFormBoundaryYlvo4TgjRisqHV2S"
+        return f'{webkit}\r\nContent-Disposition: form-data; name="name"\r\n\r\n{venue_name}\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="address"\r\n\r\ntest address\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="stateId"\r\n\r\n\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="town"\r\n\r\ntest town\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="postCode"\r\n\r\n1234\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="code"\r\n\r\n{code}\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="metroStation"\r\n\r\n\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="sequence"\r\n\r\n10000\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="serviceChargeRate"\r\n\r\n0\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="defaultTeeOffCapacity"\r\n\r\n4\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="defaultTeeOffDurationInMinutes"\r\n\r\n5\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="softPencilDurationInHours"\r\n\r\n33\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="defaultEventSpaceReservationFrontBufferDurationInMinutes"\r\n\r\n5\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="defaultEventSpaceReservationBackBufferDurationInMinutes"\r\n\r\n5\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="defaultGolfReservationFrontBufferDurationInMinutes"\r\n\r\n5\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="defaultGolfReservationBackBufferDurationInMinutes"\r\n\r\n5\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="defaultGolfGameDurationInMinutes"\r\n\r\n45\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="cityAreaId"\r\n\r\n0dadc60f-522a-4199-8854-37539992e8bc\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="areaStatus"\r\n\r\n1\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="areaStatusText"\r\n\r\nActive\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="color"\r\n\r\n#1b1c2f\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="timeFormat"\r\n\r\n0\r\n' \
+               f'{webkit}\r\nContent-Disposition: form-data; name="dateFormat"\r\n\r\n0\r\n' \
+               f'{webkit}--\r\n'
+
+
+    space_data = '------WebKitFormBoundarykQDlBtRab9Jz5P8h\r\nContent-Disposition: form-data; name="id"\r\n\r\ndb9c59d5-689b-4425-2534-08da327736f9\r\n' \
+                 '------WebKitFormBoundarykQDlBtRab9Jz5P8h\r\nContent-Disposition: form-data; name="eventSpaceConfigId"\r\n\r\n56982056-59c4-4105-4064-08da327736f8\r\n' \
+                 '------WebKitFormBoundarykQDlBtRab9Jz5P8h\r\nContent-Disposition: form-data; name="eventSpaceConfigStartDate"\r\n\r\n2022-05-10T00:00:00\r\n' \
+                 '------WebKitFormBoundarykQDlBtRab9Jz5P8h\r\nContent-Disposition: form-data; name="name"\r\n\r\nExclusive Hire\r\n' \
+                 '------WebKitFormBoundarykQDlBtRab9Jz5P8h\r\nContent-Disposition: form-data; name="abbreviation"\r\n\r\nXH\r\n' \
+                 '------WebKitFormBoundarykQDlBtRab9Jz5P8h\r\nContent-Disposition: form-data; name="description"\r\n\r\n\r\n' \
+                 '------WebKitFormBoundarykQDlBtRab9Jz5P8h\r\nContent-Disposition: form-data; name="maximumSeatedCapacity"\r\n\r\n40\r\n' \
+                 '------WebKitFormBoundarykQDlBtRab9Jz5P8h\r\nContent-Disposition: form-data; name="maximumCapacity"\r\n\r\n50\r\n' \
+                 '------WebKitFormBoundarykQDlBtRab9Jz5P8h\r\nContent-Disposition: form-data; '
+
+    @staticmethod
+    def golf_payload(venue_id, start_date, golf_name):
+        webkit = "------WebKitFormBoundarypXFFgqowibovAUgp\r\nContent-Disposition: form-data;"
+        return f'{webkit} name="venueId"\r\n\r\n{venue_id}\r\n' \
+               f'{webkit} name="logoImageFile"\r\n\r\n\r\n' \
+               f'{webkit} name="layoutImageFile1"\r\n\r\n\r\n' \
+               f'{webkit} name="layoutImageFile2"\r\n\r\n\r\n' \
+               f'{webkit} name="layoutImageFile3"\r\n\r\n\r\n' \
+               f'{webkit} name="presentConfig[startDate]"\r\n\r\n{start_date}\r\n' \
+               f'{webkit} name="presentConfig[status]"\r\n\r\n1\r\n' \
+               f'{webkit} name="presentConfig[name]"\r\n\r\n{golf_name}\r\n' \
+               f'{webkit} name="presentConfig[description]"\r\n\r\n\r\n' \
+               f'{webkit} name="presentConfig[teeOffPriority]"\r\n\r\n1\r\n' \
+               f'{webkit} name="presentConfig[logoImage][url]"\r\n\r\n\r\n' \
+               f'{webkit} name="presentConfig[layoutImages][0][url]"\r\n\r\n\r\n' \
+               f'{webkit} name="presentConfig[layoutImages][0][originalFileName]"\r\n\r\n\r\n' \
+               f'{webkit} name="presentConfig[layoutImages][1][url]"\r\n\r\n\r\n' \
+               f'{webkit} name="presentConfig[layoutImages][1][originalFileName]"\r\n\r\n\r\n' \
+               f'{webkit} name="presentConfig[layoutImages][2][url]"\r\n\r\n\r\n' \
+               f'{webkit} name="presentConfig[layoutImages][2][originalFileName]"\r\n\r\n\r\n' \
+               f'------WebKitFormBoundarypXFFgqowibovAUgp--\r\n'
+
+    @staticmethod
+    def product_payload(name, date, category_id):
+        webkit = "------WebKitFormBoundaryzuiKAVLPu3NqbywJ\r\nContent-Disposition: form-data;"
+        return f'{webkit} name="name"\r\n\r\n{name}\r\n' \
+               f'{webkit} name="productName"\r\n\r\n{name}\r\n' \
+               f'{webkit} name="status"\r\n\r\n1\r\n' \
+               f'{webkit} name="startDate"\r\n\r\n{date}+04:00\r\n' \
+               f'{webkit} name="endDate"\r\n\r\n\r\n' \
+               f'{webkit} name="isOpenPrice"\r\n\r\ntrue\r\n' \
+               f'{webkit} name="categoryId"\r\n\r\n{category_id}\r\n' \
+               f'{webkit} name="subCategoryId"\r\n\r\n\r\n' \
+               f'{webkit} name="vendorId"\r\n\r\n\r\n' \
+               f'{webkit} name="pricingType"\r\n\r\n0\r\n' \
+               f'{webkit} name="logoImage[url]"\r\n\r\n\r\n' \
+               f'{webkit} name="logoImage[originalFileName]"\r\n\r\n\r\n' \
+               f'{webkit} name="logoImageFile"\r\n\r\n\r\n' \
+               f'{webkit} name="description"\r\n\r\n\r\n' \
+               f'{webkit} name="isVoucher"\r\n\r\nfalse\r\n' \
+               f'{webkit} name="voucherType"\r\n\r\n\r\n' \
+               f'{webkit} name="productPrices[0][dayOfWeek]"\r\n\r\n1\r\n' \
+               f'{webkit} name="productPrices[0][dayOfWeekName]"\r\n\r\nMonday\r\n' \
+               f'{webkit} name="productPrices[0][price]"\r\n\r\n0\r\n' \
+               f'{webkit} name="productPrices[1][dayOfWeek]"\r\n\r\n2\r\n' \
+               f'{webkit} name="productPrices[1][dayOfWeekName]"\r\n\r\nTuesday\r\n' \
+               f'{webkit} name="productPrices[1][price]"\r\n\r\n0\r\n' \
+               f'{webkit} name="productPrices[2][dayOfWeek]"\r\n\r\n3\r\n' \
+               f'{webkit} name="productPrices[2][dayOfWeekName]"\r\n\r\nWednesday\r\n' \
+               f'{webkit} name="productPrices[2][price]"\r\n\r\n0\r\n' \
+               f'{webkit} name="productPrices[3][dayOfWeek]"\r\n\r\n4\r\n' \
+               f'{webkit} name="productPrices[3][dayOfWeekName]"\r\n\r\nThursday\r\n' \
+               f'{webkit} name="productPrices[3][price]"\r\n\r\n0\r\n' \
+               f'{webkit} name="productPrices[4][dayOfWeek]"\r\n\r\n5\r\n' \
+               f'{webkit} name="productPrices[4][dayOfWeekName]"\r\n\r\nFriday\r\n' \
+               f'{webkit} name="productPrices[4][price]"\r\n\r\n0\r\n' \
+               f'{webkit} name="productPrices[5][dayOfWeek]"\r\n\r\n6\r\n' \
+               f'{webkit} name="productPrices[5][dayOfWeekName]"\r\n\r\nSaturday\r\n' \
+               f'{webkit} name="productPrices[5][price]"\r\n\r\n0\r\n' \
+               f'{webkit} name="productPrices[6][dayOfWeek]"\r\n\r\n0\r\n' \
+               f'{webkit} name="productPrices[6][dayOfWeekName]"\r\n\r\nSunday\r\n' \
+               f'{webkit} name="productPrices[6][price]"\r\n\r\n0\r\n' \
+               f'{webkit} name="isDisabled"\r\n\r\nfalse\r\n' \
+               f'{webkit} name="categoryVenueId"\r\n\r\n04952420-3346-4deb-cb6b-08d93561c3cf\r\n' \
+               f'{webkit} name="product[venueId]"\r\n\r\n8ed345d1-a9a4-4784-afb3-c744b2cc074a\r\n' \
+               f'{webkit} name="product[isOpenProduct]"\r\n\r\nfalse\r\n' \
+               f'------WebKitFormBoundaryzuiKAVLPu3NqbywJ--\r\n'
+
+    @staticmethod
+    def package_payload(name, date, product1, product2, category_id):
+        webkit = "------WebKitFormBoundary9AZNgnbwC7ADHvCf\r\nContent-Disposition: form-data; "
+        return f'{webkit}name="name"\r\n\r\n{name}\r\n' \
+               f'{webkit}name="startDate"\r\n\r\n{date}+04:00\r\n' \
+               f'{webkit}name="endDate"\r\n\r\n\r\n' \
+               f'{webkit}name="isTimeRangeOn"\r\n\r\nfalse\r\n' \
+               f'{webkit}name="startTime"\r\n\r\n\r\n' \
+               f'{webkit}name="endTime"\r\n\r\n\r\n' \
+               f'{webkit}name="isReccurenceOn"\r\n\r\nfalse\r\n' \
+               f'{webkit}name="isMondayActive"\r\n\r\nfalse\r\n' \
+               f'{webkit}name="isTuesdayActive"\r\n\r\nfalse\r\n' \
+               f'{webkit}name="isWednesdayActive"\r\n\r\nfalse\r\n' \
+               f'{webkit}name="isThursdayActive"\r\n\r\nfalse\r\n' \
+               f'{webkit}name="isFridayActive"\r\n\r\nfalse\r\n' \
+               f'{webkit}name="isSaturdayActive"\r\n\r\nfalse\r\n' \
+               f'{webkit}name="isSundayActive"\r\n\r\nfalse\r\n' \
+               f'{webkit}name="packageName"\r\n\r\n{name}\r\n' \
+               f'{webkit}name="packageStatus"\r\n\r\n1\r\n' \
+               f'{webkit}name="isForGroupSales"\r\n\r\ntrue\r\n' \
+               f'{webkit}name="isForOnlineSales"\r\n\r\nfalse\r\n' \
+               f'{webkit}name="minPartySize"\r\n\r\n1\r\n' \
+               f'{webkit}name="maxPartySize"\r\n\r\n100\r\n' \
+               f'{webkit}name="avatarImage[url]"\r\n\r\n\r\n' \
+               f'{webkit}name="avatarImage[originalFileName]"\r\n\r\n\r\n' \
+               f'{webkit}name="avatarImageFile"\r\n\r\n\r\n' \
+               f'{webkit}name="hasReservedArea"\r\n\r\nfalse\r\n' \
+               f'{webkit}name="description"\r\n\r\n\r\n' \
+               f'{webkit}name="spaceDuration"\r\n\r\n45\r\n' \
+               f'{webkit}name="packageBundledProducts[0][productId]"\r\n\r\n{product1}\r\n' \
+               f'{webkit}name="packageBundledProducts[0][name]"\r\n\r\nepic golf\r\n' \
+               f'{webkit}name="packageBundledProducts[0][description]"\r\n\r\n\r\n' \
+               f'{webkit}name="packageBundledProducts[0][code]"\r\n\r\nS0000622\r\n' \
+               f'{webkit}name="packageBundledProducts[0][logoImage]"\r\n\r\n\r\n' \
+               f'{webkit}name="packageBundledProducts[0][price]"\r\n\r\n100\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][0][dayOfWeek]"\r\n\r\n1\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][0][dayOfWeekName]"\r\n\r\nMonday\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][0][price]"\r\n\r\n100\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][0][id]"\r\n\r\n00000000-0000-0000-0000-000000000000\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][1][dayOfWeek]"\r\n\r\n2\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][1][dayOfWeekName]"\r\n\r\nTuesday\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][1][price]"\r\n\r\n100\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][1][id]"\r\n\r\n00000000-0000-0000-0000-000000000000\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][2][dayOfWeek]"\r\n\r\n3\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][2][dayOfWeekName]"\r\n\r\nWednesday\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][2][price]"\r\n\r\n100\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][2][id]"\r\n\r\n00000000-0000-0000-0000-000000000000\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][3][dayOfWeek]"\r\n\r\n4\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][3][dayOfWeekName]"\r\n\r\nThursday\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][3][price]"\r\n\r\n100\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][3][id]"\r\n\r\n00000000-0000-0000-0000-000000000000\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][4][dayOfWeek]"\r\n\r\n5\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][4][dayOfWeekName]"\r\n\r\nFriday\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][4][price]"\r\n\r\n100\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][4][id]"\r\n\r\n00000000-0000-0000-0000-000000000000\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][5][dayOfWeek]"\r\n\r\n6\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][5][dayOfWeekName]"\r\n\r\nSaturday\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][5][price]"\r\n\r\n100\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][5][id]"\r\n\r\n00000000-0000-0000-0000-000000000000\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][6][dayOfWeek]"\r\n\r\n0\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][6][dayOfWeekName]"\r\n\r\nSunday\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][6][price]"\r\n\r\n100\r\n' \
+               f'{webkit}name="packageBundledProducts[0][prices][6][id]"\r\n\r\n00000000-0000-0000-0000-000000000000\r\n' \
+               f'{webkit}name="packageBundledProducts[0][pricingType]"\r\n\r\n0\r\n' \
+               f'{webkit}name="packageBundledProducts[0][quantity]"\r\n\r\n1\r\n' \
+               f'{webkit}name="packageBundledProducts[0][packageBundledProductType]"\r\n\r\n0\r\n' \
+               f'{webkit}name="packageBundledProducts[0][categoryType]"\r\n\r\n1\r\n' \
+               f'{webkit}name="hasServiceChargeRate"\r\n\r\nfalse\r\n' \
+               f'{webkit}name="package[venueId]"\r\n\r\n8ed345d1-a9a4-4784-afb3-c744b2cc074a\r\n' \
+               f'------WebKitFormBoundary9AZNgnbwC7ADHvCf--\r\n'
+               # f'{webkit}name="packageBundledProducts[1][productId]"\r\n\r\n{product2}\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][name]"\r\n\r\nepic space\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][description]"\r\n\r\n\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][code]"\r\n\r\nS0000623\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][logoImage]"\r\n\r\n\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][price]"\r\n\r\n100\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][0][dayOfWeek]"\r\n\r\n1\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][0][dayOfWeekName]"\r\n\r\nMonday\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][0][price]"\r\n\r\n10\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][0][id]"\r\n\r\n00000000-0000-0000-0000-00000000000\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][1][dayOfWeek]"\r\n\r\n2\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][1][dayOfWeekName]"\r\n\r\nTuesday\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][1][price]"\r\n\r\n10\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][1][id]"\r\n\r\n00000000-0000-0000-0000-00000000000\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][2][dayOfWeek]"\r\n\r\n3\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][2][dayOfWeekName]"\r\n\r\nWednesday\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][2][price]"\r\n\r\n10\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][2][id]"\r\n\r\n00000000-0000-0000-0000-00000000000\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][3][dayOfWeek]"\r\n\r\n4\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][3][dayOfWeekName]"\r\n\r\nThursday\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][3][price]"\r\n\r\n10\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][3][id]"\r\n\r\n00000000-0000-0000-0000-00000000000\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][4][dayOfWeek]"\r\n\r\n5\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][4][dayOfWeekName]"\r\n\r\nFriday\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][4][price]"\r\n\r\n10\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][4][id]"\r\n\r\n00000000-0000-0000-0000-00000000000\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][5][dayOfWeek]"\r\n\r\n6\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][5][dayOfWeekName]"\r\n\r\nSaturday\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][5][price]"\r\n\r\n10\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][5][id]"\r\n\r\n00000000-0000-0000-0000-00000000000\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][6][dayOfWeek]"\r\n\r\n\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][6][dayOfWeekName]"\r\n\r\nSunday\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][6][price]"\r\n\r\n10\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][prices][6][id]"\r\n\r\n00000000-0000-0000-0000-00000000000\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][pricingType]"\r\n\r\n\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][quantity]"\r\n\r\n1\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][packageBundledProductType]"\r\n\r\n\r\n' \
+               # f'{webkit}name="packageBundledProducts[1][categoryType]"\r\n\r\n2\r\n' \
+               # f'{webkit}name="hasServiceChargeRate"\r\n\r\nfalse\r\n' \
+               # f'{webkit}name="package[venueId]"\r\n\r\n8ed345d1-a9a4-4784-afb3-c744b2cc074a\r\n' \
+               # f'------WebKitFormBoundary9AZNgnbwC7ADHvCf--\r\n'

@@ -1,0 +1,28 @@
+{
+  "venueId": "8ed345d1-a9a4-4784-afb3-c744b2cc074a",
+  "entityName": "Auto BO",
+  "billingAddress": "test",
+  "billingCode": "123451",
+  "defaultCurrencyId": "fd5199f6-6172-4784-a511-a69403683a8c",
+  "bankName": "test",
+  "bankAddress": "test",
+  "accountNumber": "test",
+  "sortCode": "",
+  "routingNumber": "",
+  "abaNumber": "",
+  "swiftCode": "",
+  "other": "",
+  "vatCodes": [
+    "4567"
+  ],
+  "address": {
+    "countryCode": "",
+    "countryHasStates": false,
+    "countryId": "",
+    "stateId": "",
+    "postCode": "1234",
+    "town": "test",
+    "street": "test"
+  },
+  "startDate": "2022-05-27T00:00:00"
+}

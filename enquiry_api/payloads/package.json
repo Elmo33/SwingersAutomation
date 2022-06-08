@@ -1,0 +1,15 @@
+{
+    "id": "7b5d6c32-9cb9-4c28-2fb6-08da3d5d8767",
+    "inquiryId": "0d243e70-fb46-4538-651f-08da3d5d879d",
+    "bookingId": "7b5d6c32-9cb9-4c28-2fb6-08da3d5d8767",
+    "operationalDate": "2022-05-25T00:00:00",
+    "partySize": 16,
+    "packageId": "60cdafdb-f8bf-4095-6141-08da239de7da",
+    "packageConfigId": "ace28cb4-a9ab-4c4f-85e3-08da239de7f3",
+    "packageInquiryOptionalUpgrades": [],
+    "IsRescheduling": false,
+    "venueId": "3a54e4da-32fb-49d1-9e1e-6128549009f6",
+    "inquiryAddOns": [],
+    "inquiryAddOnSnapshots": [],
+    "changedByUser": false
+}

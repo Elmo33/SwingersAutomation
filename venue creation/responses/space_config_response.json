@@ -1,0 +1,27 @@
+{
+  "venueId": "60c0a48c-327a-4db9-8653-61d0df209239",
+  "startDate": "2022-05-27T00:00:00",
+  "endDate": null,
+  "status": 0,
+  "rootEventSpace": {
+    "parentId": null,
+    "name": "Exclusive Hire",
+    "maximumSeatedCapacity": 0,
+    "maximumCapacity": 0,
+    "hierarchyLevel": 0,
+    "sequence": 0,
+    "isBookableOnline": false,
+    "tables": [],
+    "layoutImages": [
+      null,
+      null,
+      null
+    ],
+    "children": [],
+    "eventSpaceOffSaleDateRanges": [],
+    "id": "e65227d2-6118-4f59-6d28-08da3fee558c"
+  },
+  "venueAreaId": "60c0a48c-327a-4db9-8653-61d0df209239",
+  "tables": [],
+  "id": "a209567a-715a-4230-ba99-08da3fee558b"
+}

@@ -1,0 +1,29 @@
+{
+    "bookingId": "7b5d6c32-9cb9-4c28-2fb6-08da3d5d8767",
+    "venueId": "3a54e4da-32fb-49d1-9e1e-6128549009f6",
+    "reservations": [
+        {
+            "venueId": "3a54e4da-32fb-49d1-9e1e-6128549009f6",
+            "eventSpaceId": "e19dbf69-a115-451c-ed1f-08da275d541d",
+            "venueOpeningHourId": "89f996ed-b36b-4613-8825-08da2e93e758",
+            "bookingId": "7b5d6c32-9cb9-4c28-2fb6-08da3d5d8767",
+            "operationalDate": "2022-05-25T00:00:00",
+            "start": "2022-05-25T17:00:00.000Z",
+            "end": "2022-05-25T17:30:00.000Z",
+            "frontBufferStart": "2022-05-25T16:55:00.000Z",
+            "frontBufferEnd": "2022-05-25T17:00:00.000Z",
+            "backBufferStart": "2022-05-25T17:30:00.000Z",
+            "backBufferEnd": "2022-05-25T17:35:00.000Z"
+        }
+    ],
+    "inquiry": {
+        "id": "0d243e70-fb46-4538-651f-08da3d5d879d",
+        "agencyId": null,
+        "agencyRate": null,
+        "agencyContactId": null,
+        "companyId": null,
+        "clientId": null,
+        "contactId": null,
+        "eventType": 1
+    }
+}
