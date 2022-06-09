@@ -13,7 +13,7 @@ class TestBooking:
     driver = webdriver.Chrome()
     env_url = "https://swingers-cms-uat.azurewebsites.net/us/locations/nyc/book-now"
     day = 'July 27, 2022'
-    months_after = 1  # how many months later is the day thay you are booking
+    months_after = 1  # how many months later is the day that you are booking
     time = '6:30pm - 8:00pm'
     guests = 10
     package_number = 2
