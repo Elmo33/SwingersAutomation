@@ -12,7 +12,7 @@ import json
 class TestBooking:
     driver = webdriver.Chrome()
     env_url = "https://swingers-cms-uat.azurewebsites.net/us/locations/nyc/book-now"
-    day = 'July 27, 2022'
+    day = 'July 28, 2022'
     months_after = 1  # how many months later is the day that you are booking
     time = '6:30pm - 8:00pm'
     guests = 10
@@ -139,4 +139,4 @@ class TestBooking:
 
         client_details = self.find_element("form-client-details")
         pay = self.find_element("btn.btn-gold", client_details)
-        pay.click()
+        # pay.click()
